@@ -60,7 +60,6 @@ export default function Jobs({ jobs }: Props) {
   const clearCompanyFilter = () => {
     setJobsToShow(jobs.slice(0, increment));
     setCompanyFilter(false);
-    console.log(jobsToShow);
   };
 
   const onSelectCompany = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -91,7 +90,7 @@ export default function Jobs({ jobs }: Props) {
         >
           <option sx={{ fontFamily: "system-ui" }}>All</option>
           {companyNames.map((name) => (
-            <option sx={{ fontFamily: "system-ui" }} value={name}>
+            <option sx={{ fontFamily: "system-ui" }} value={name} key={name}>
               {name}
             </option>
           ))}
@@ -149,14 +148,13 @@ export async function getServerSideProps() {
   if (!res.ok) {
     return {
       props: {
-        jobs: [{ title: "Fake Job" }]
+        jobs: []
       }
     };
   }
 
   const { jobs } = await res.json();
 
-  console.log({ total: jobs.length });
   return {
     props: {
       jobs

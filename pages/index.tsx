@@ -13,14 +13,13 @@ export default function Home() {
         alignItems: "center",
         flexDirection: "column"
       }}
+      p={6}
     >
-      <Card mt={4}>
-        <Heading mb={2}>Zippia Test Home page</Heading>
-        <Text>
-          This is the Home page of the test. To check out the actual test
-          implementation, go to the <Link href="/test/jobs">Jobs</Link> page.
-        </Text>
-      </Card>
+      <Heading mb={2}>Zippia Test Home page</Heading>
+      <Text sx={{ fontSize: 2, fontWeight: 500 }}>
+        This is the Home page of the test. To check out the actual test
+        implementation, go to the <Link href="/test/jobs">Jobs</Link> page.
+      </Text>
     </Flex>
   );
 }
