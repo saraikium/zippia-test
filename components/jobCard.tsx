@@ -1,14 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import {
-  Card,
-  Divider,
-  Flex,
-  Heading,
-  Image,
-  Text
-} from "@theme-ui/components";
+import { Card, Divider, Flex, Image, Text } from "@theme-ui/components";
 import Job from "../interfaces/Job";
 
 interface Props {

@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import { Card, Heading, Flex, Text } from "@theme-ui/components";
+import { Heading, Flex, Text } from "@theme-ui/components";
 import Link from "next/link";
 
 export default function Home() {
