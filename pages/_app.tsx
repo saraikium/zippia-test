@@ -1,9 +1,14 @@
 import * as React from "react";
-import { Them } from "theme-ui";
-import "../styles/globals.css";
+import { ThemeProvider } from "theme-ui";
+import theme from "../theme";
+// import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <ThemeProvider theme={theme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
 
 export default MyApp;
