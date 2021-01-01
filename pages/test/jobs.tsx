@@ -140,7 +140,7 @@ export async function getServerSideProps() {
       fetchJobDesc: true,
       jobTitle: "Business Analyst",
       locations: [],
-      numJobs: 10,
+      numJobs: 20,
       previousListingHashes: []
     })
   });
