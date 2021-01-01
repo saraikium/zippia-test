@@ -18,7 +18,11 @@ export default function Home() {
       <Heading mb={2}>Zippia Test Home page</Heading>
       <Text sx={{ fontSize: 2, fontWeight: 500 }}>
         This is the Home page of the test. To check out the actual test
-        implementation, go to the <Link href="/test/jobs">Jobs</Link> page.
+        implementation, go to the{" "}
+        <Link href="/test/jobs">
+          <a>Jobs</a>
+        </Link>{" "}
+        page.
       </Text>
     </Flex>
   );
